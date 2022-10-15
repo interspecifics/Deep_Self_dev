@@ -1,0 +1,5 @@
+C:\Users\fred\AppData\Local\Programs\Python\Python39\python.exe .\CyKIT.py 127.0.0.1 54123 4 info+confirm
+
+C:\Users\fred\AppData\Local\Programs\Python\Python38\python.exe .\CyKIT.py 127.0.0.1 54123 4 forma
+
+C:\Users\fred\AppData\Local\Programs\Python\Python38\python.exe .\CyKIT.py 127.0.0.1 54123 4 openvibe+generic+noheader+nobattery+ovdelay:100+float+ovsamples:004
