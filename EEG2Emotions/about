@@ -1,9 +1,7 @@
 /**
 	EEG2Emotions - 2022
-	Reconocimiento de emociones de señales EEG usando sistema de inferencia difuso
+	Reconocimiento de emociones de seÃ±ales EEG usando sistema de inferencia difuso
 	Emotion recognition from EEG signals using fuzzy inference system
 	
-	Authors:
-	Erick Fernando Gonzalez Castañeda	- erick.glez.cast@gmail.com
-	Alejandro Torres Garcia				- alejandro.torres@inaoep.mx, kcobaimskywalker@gmail.com
+	
 **/
