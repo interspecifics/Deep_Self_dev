@@ -11,7 +11,7 @@
 #
 """
 
-  usage:  python.exe .\example_insight_v2.py
+  usage:  python.exe .\insight_osc.py
    
 """   
    
@@ -34,13 +34,12 @@ from datetime import datetime as dt
 tasks = queue.Queue()
 EEG_name = { "AF3":3, "T7": 5, "Pz":7, "T8":12, "AF4":14 }
 
-# optional CLI parameter to add a username to the resulting csv filename
+# parametros de linea de comandos
 parser = argparse.ArgumentParser(description="Program to record EEG data to csv",
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("-o", "--omit", default='', help="omit either 'csv' or 'osc' mode")
 parser.add_argument("--ip", default="127.0.0.1", help="The ip of the OSC server")
 parser.add_argument("--port", type=int, default=5005, help="The port the OSC server is listening on")
-parser.add_argument("--user", default="", help="Nombre de paciente")
 
 args = vars(parser.parse_args())
 

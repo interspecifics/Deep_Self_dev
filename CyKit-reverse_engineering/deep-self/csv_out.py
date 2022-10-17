@@ -22,7 +22,7 @@ if __name__ == "__main__":
   parser = argparse.ArgumentParser()
   parser.add_argument("--ip", default="127.0.0.1", help="The ip to listen on")
   parser.add_argument("--port", type=int, default=1234, help="The port to listen on")
-  parser.add_argument("-u", "--user", default='', help="namer of user being monitored")
+  parser.add_argument("-u", "--user", default='', help="name of user being monitored")
 
   args = parser.parse_args()
 
