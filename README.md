@@ -9,8 +9,13 @@ INDICE:
 5. [Visualizaciones](https://github.com/interspecifics/Deep_Self_dev#5-visualizaciones)
 6. [Patches de composición](https://github.com/interspecifics/Deep_Self_dev#6-patches-de-composición)
 
+_______________________________________________________________
 
 Deep Self_Dev es un toolkit desarrollado por Interspecifics para el proyecto Trasient Hypofrontality apoyado por el Sistema Nacional de Creadores de Arte del FONCA. Una exploración de arte y neurociencias. 
+
+Es un proyecto que explora desde el arte, la tecnología y la neurobiología, la emergencia de estados de conciencia alterada a partir de la exposición a experiencias estéticas. Utilizando la estimulación cognitiva como interfaz para accionar procesos empáticos en el ser humano. Inducidos a partir de instalaciones que utilizan técnicas bioquímicas, sonoras y electromagnéticas.
+
+Transient Hypofrontality Tools busca crear un esquema sobre la ontología de los estados ASC. El proceso se conforma en la creación de una serie de piezas que sirvan como las herramientas para inducir distintas experiencias en los espectadores, las cuales tendrán un registro narrativo y anecdótico. Con la intención de presentar en conjunto los materiales que se produzcan de esta exploración en un formato híbrido entre bitácora de investigación  y libro de artista.
 
 En este repositorio se alojan los desarrollos software / hardware utilizados para: extraer señales biometricas EEG, anlizar las señales por medio de un algortimo de detección de emociones. 
 
