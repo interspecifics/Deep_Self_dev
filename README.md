@@ -1,17 +1,13 @@
 # Deep Self _Dev @ Transient Hypofrontality toolkit 
 
 INDICE:
-1.[Extracción de datos](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
 
-2.[Procesamiento de datos](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
-
-3.[EEG a Emociones](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
-
-4.[Data Server](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
-
-5.[Visualizaciones](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
-
-6.[Patches de composición](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
+1. [Extracción de datos](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
+2. [Procesamiento de datos](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
+3. [EEG a Emociones](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
+4. [Data Server](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
+5. [Visualizaciones](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
+6. [Patches de composición](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
 
 
 Deep Self_Dev es un toolkit desarrollado para el proyecto Trasient Hypofrontality apoyado por el Sistema Nacional de Creadores de Arte del FONCA. 
