@@ -1,4 +1,4 @@
-# Deep_Self
+# Deep_Self_Dev _ Transient Hypofrontality toolkit 
 
 Deep Self_Dev es un toolkit desarrollado para el proyecto Trasient Hypofrontality apoyado por el Sistema Nacional de Creadores de Arte del FONCA. 
 En este repositorio se alojan los desarrollos software / hardware utilizados para extraer señales biometricas EEG, anlizar las señales por medio de un algortimo 
