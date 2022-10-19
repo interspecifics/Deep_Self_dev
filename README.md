@@ -10,9 +10,14 @@ En este repositorio se alojan los desarrollos software / hardware utilizados par
 Estos datos son despues transmitidos por un servidor que tiene la capacidad de sencuenciar set de datos pregrabados en un formato para creación audivisual estandar Open Sound Control. 
 
 ## 1. Extracción de datos EEG
-Para la tarea de extracción estamos utilizando un versión modificada del CyKit-reverse_engineering dentro de esta carpeta se encuentra una carpeta deep self. Para utilizar el sistema es necesario seguir los siguientes pasos. 
+Para el levantamieno de datos EEG decidimos trabajar con la diadema EMOTIV Insight con capacidad de 5 electrodos. 
 
-###### a. Servidor OSC para transmitir la lectura de electroencefalograma (EEG) de la diadema EMOTIV
+![This is an image](https://www.mindtecstore.com/media/image/product/2163/md/emotiv-insight-5-kanal-eeg-headset~4.jpg)
+
+Para la tarea de extracción estamos utilizando un versión modificada del CyKit-reverse_engineering 
+Para utilizar el sistema es necesario seguir los siguientes pasos. 
+
+###### a. Servidor OSC para transmitir la lectura de electroencefalograma (EEG) raw de la diadema EMOTIV
 
 insight_osc.py
 
