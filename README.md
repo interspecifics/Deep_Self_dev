@@ -31,6 +31,8 @@ ___________________________________________
 
 ## 2. Analisis de EEG a Emociones
 
+![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/EEG2Emotions/resultados/graficas/alf_audio_EEG_2022-04-20_155442.PNG?raw=true)
+
 ## 3. Servidor de EEG a OSC
 
 ## 4. Visualizaciones
