@@ -27,6 +27,8 @@ Este script crea un cliente que recibe las señales de lectura de EEG de la diad
 
 Está pensado para ser ejecutado desde linea de comandos y opcionalmente recibe el parámetro --user que agrega la cadena de texto especificada al nombre del archivo csv resultante.
 
+![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/CyKit-reverse_engineering/deep-self/eegcapture.jpg?raw=true)
+
 ___________________________________________
 
 ## 2. Analisis de EEG a Emociones
