@@ -17,4 +17,4 @@ CyKit-reverse_engineering
 
 ## 3. Visualizaciones
 
-#$ 4. Patches de composición 
+## 4. Patches de composición 
