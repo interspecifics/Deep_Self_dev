@@ -61,6 +61,7 @@ Los resultados son el nivel de activación de las emociones en el tiempo.
 Proporciona un flujo de datos sin procesar y transformados, y permite reproducir los datos en segmentos de 128 muestras (2 segundos) que se pueden organizar de forma personalizada en secuencias y bucles. Hay tres tipos de datos en la secuencia:
 
 - Raw Data: 
+
 • EEG-Electrodos de actividad bioelectrica [5 canales]: Medición de la actividad electroencefalográfica para cada una de las 5 posiciones del auricular Muse: AF3, T7 Pz, T8, AF4. La frecuencia de muestreo es de 64 muestras/s, las unidades son microvoltios.
 
 - Transformed data:
@@ -68,6 +69,17 @@ Proporciona un flujo de datos sin procesar y transformados, y permite reproducir
 • Componentes Independientes [4 canales]: Representaciones paralelas de la actividad cerebral. Cada canal corresponde a un tipo de comportamiento periódico como eventos incidentales, frecuentes, únicos, etc. La frecuencia de muestreo es de 64 muestras/seg.
 
 • Bandas de frecuencia: representación de datos de EEG como componentes espectrales para bandas de EEG comunes: alfa (a, 8-12 Hz), beta_low (bl, 13-21 Hz), beta_high (bh, 21-30 Hz), delta (d, 1) -3 Hz), gamma (g, 30-100 Hz), theta (th, 4-7 Hz). La frecuencia de muestreo es de 64 muestras/seg.
+
+- Metadata 
+
+• Índices del modelo de valencia/excitación/dominancia: la valencia es el nivel de felicidad, varía de positivo a negativo y expresa el sentimiento agradable o desagradable acerca de algo. La excitación es el nivel de activación afectiva, que va desde el sueño hasta la excitación. La dominancia refleja el nivel de control del estado emocional, de sumiso a dominante.
+
+• Predicción del Estado de Emoción sobre Ventanas de Tiempo: La emoción predicha por los índices del modelo VAD, requiere las muestras en un periodo de 2 segundos, por lo que genera una muestra cada vez que se completa un segmento. Las emociones reconocibles son: Aburrido, Soñoliento, Desprecio, Tristeza, Alegría, RelajaciónNeutral, Amor, Ira, Tensión, Estrés, Miedo, Sorpresa.
+Confianza de predicción: Cuanta confianza hay en las predicciones.
+
+![This is an image](https://www.mindtecstore.com/media/image/product/2163/md/emotiv-insight-5-kanal-eeg-headset~4.jpg)
+
+
 
 ## 4. Visualizaciones
 
