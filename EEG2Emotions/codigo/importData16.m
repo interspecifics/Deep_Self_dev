@@ -1,5 +1,5 @@
 %% Import data from text file.
-filename = [path file '.csv'];
+filename = strcat(path, file, '.csv');
 delimiter = ',';
 startRow = 2;
 

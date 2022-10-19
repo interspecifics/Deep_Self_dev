@@ -36,9 +36,22 @@ arousal = (pAlpha(:,idxAF3) + pAlpha(:,idxAF4)) ./ (pBeta(:,idxAF3) + pBeta(:,id
 dominance = pBeta(:,idxT8) ./ pAlpha(:,idxT8) + pBeta(:,idxAF4) ./ pAlpha(:,idxAF4) + pBeta(:,idxPz) ./ pAlpha(:,idxPz);
 
 %-- normalization
-valence = (valence - min(valence)) ./ (max(valence) - min(valence));
-arousal = (arousal - min(arousal)) ./ (max(arousal) - min(arousal));
-dominance = (dominance - min(dominance)) ./ (max(dominance) - min(dominance));
+valence = (valence - min(valence)) ./ (max(valence) - min(valence))
+arousal = (arousal - min(arousal)) ./ (max(arousal) - min(arousal))
+dominance = (dominance - min(dominance)) ./ (max(dominance) - min(dominance))
+
+%-- esto hace sobreescribir los valores de v,a,d con un linspace
+%-- lo utilizo para entender las regiones en el cubo v,a,d
+%-- comenta esta sección para usar el código de manera regular
+valence = reshape(linspace(0,1,length(valence)),331,1);
+arousal = reshape(linspace(0,1,length(valence)),331,1);
+dominance = reshape(linspace(0,1,length(valence)),331,1);
+
+% valence(end) = nan;
+% arousal(end) = nan;
+% dominance(end) = nan;
+
+
 
 % ------ FIS -----------
 emotions_labels = {'BoredSleepy','Contempt','Sadness','Joy','RelaxNeutral','Love','Anger','TenseStress','Fear','Surprise'};
@@ -52,7 +65,7 @@ emotionResult = zeros(size(valence,1), emotionNum);
 
 o=31;
 for o=1:size(valence,1)
-    [output, IRR, ORR, ARR] = evalfis([arousal(o) valence(o) dominance(o)], fis);
+    [output, IRR, ORR, ARR] = evalfis(fis, [arousal(o) valence(o) dominance(o)]);
     
     for oor_rules = 1: emotionRules
         outputFis_i(1, oor_rules) = max(ORR(:, oor_rules));
@@ -105,26 +118,37 @@ for ofis=1: size(outputFis,1)
 end
 
 % Select columns to output
-outputIdx = [1 2 3 4 6 7 8 9 10];
+outputIdx = [1 2 3 4 5 6 7 8 9 10];
 outputEmotions = emotions_labels(outputIdx);
 % ---------------------------------
 
-outputMatrix = zeros(ceil(samples/(fs*segs)), 2+size(outputEmotions,2));
+outputMatrix = zeros(ceil(samples/(fs*segs)), 2 + 3 + size(outputEmotions,2));
 outputMatrix(:,1) = 1:(fs*segs):samples;
 outputMatrix(:,2) = (fs*segs):(fs*segs):samples+(fs*segs);
+
+if length(outputMatrix(:,3)) == length(valence)
+    outputMatrix(:,3) = [valence];
+    outputMatrix(:,4) = [arousal];
+    outputMatrix(:,5) = [dominance];
+else
+    outputMatrix(:,3) = [-1; valence];
+    outputMatrix(:,4) = [-1; arousal];
+    outputMatrix(:,5) = [-1; dominance];
+end
+
 lastSample = outputMatrix(size(outputMatrix,1), 2);
 outputMatrix(size(outputMatrix,1), 2) = lastSample - (lastSample - samples);
-outputMatrix(1:size(emotionResult,1), 3:2+size(outputIdx,2)) = emotionResult(:,outputIdx);
+outputMatrix(1:size(emotionResult,1), 3+3:2+3+size(outputIdx,2)) = emotionResult(:,outputIdx);
 
-csvHeaders = ['Start' 'End' outputEmotions];
+csvHeaders = ['Start' 'End' 'valence' 'arousal' 'dominance' outputEmotions];
 ot = array2table(outputMatrix);
 ot.Properties.VariableNames(:) = csvHeaders;
-writetable(ot, [file '_Outputs.csv'])
+writetable(ot, strcat(path, file, '_Outputs.csv'))
 %csvwrite([file '_Outputs.csv'], [csvHeaders; outputMatrix]);
 
-xx = ((1:1:size(emotionResult,1))./30);
-plot(xx, emotionResult(:,outputIdx),'DisplayName','emotionsOut');
-title(['Emotions - ' strrep( file , '_' , '') ])
-xlabel('Time')
-ylabel('Ratio')
-legend(outputEmotions);
+% xx = ((1:1:size(emotionResult,1))./30);
+% plot(xx, emotionResult(:,outputIdx),'DisplayName','emotionsOut');
+% title(['Emotions - ' strrep( file , '_' , '') ])
+% xlabel('Time')
+% ylabel('Ratio')
+% legend(outputEmotions);
