@@ -8,7 +8,9 @@ de detección de emociones.
 Estos datos son despues transmitidos por un servidor que tiene la capacidad de sencuenciar set de datos pregrabados en un formato para creación audivisual estandar Open Sound Control. 
 
 ## 1. Extracción de datos EEG
-CyKit-reverse_engineering
+Para la tarea de extracción estamos utilizando un versión modificada del CyKit-reverse_engineering dentro de esta carpeta se encuentra una carpeta deep self. Para utilizar el sistema es necesario seguir los siguientes pasos. 
+
+
 
 
 ## 2. Analisis de EEG a Emociones
