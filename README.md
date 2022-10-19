@@ -11,10 +11,10 @@ Estos datos son despues transmitidos por un servidor que tiene la capacidad de s
 CyKit-reverse_engineering
 
 
-#1. Analisis de EEG a Emociones
+## 1. Analisis de EEG a Emociones
 
-#2. Servidor de EEG a OSC
+## 2. Servidor de EEG a OSC
 
-#3. Visualizaciones
+## 3. Visualizaciones
 
-#4. Patches de composición 
+#$ 4. Patches de composición 
