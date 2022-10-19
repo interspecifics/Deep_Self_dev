@@ -1,5 +1,12 @@
 # Deep_Self_Dev _ Transient Hypofrontality toolkit 
 
+INDICE:
+1. Extracción de datos 
+2. Analisis de EEG a Emociones
+3. Servidor de EEG a OSC
+4. Visualizaciones
+5. Patches de composición 
+
 
 Deep Self_Dev es un toolkit desarrollado para el proyecto Trasient Hypofrontality apoyado por el Sistema Nacional de Creadores de Arte del FONCA. 
 
