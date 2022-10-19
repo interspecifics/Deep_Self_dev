@@ -10,7 +10,7 @@ INDICE:
 6. [Patches de composición](https://github.com/interspecifics/Deep_Self_dev#1-extracción-de-datos-eeg)
 
 
-Deep Self_Dev es un toolkit desarrollado para el proyecto Trasient Hypofrontality apoyado por el Sistema Nacional de Creadores de Arte del FONCA. 
+Deep Self_Dev es un toolkit desarrollado por Interspecifics para el proyecto Trasient Hypofrontality apoyado por el Sistema Nacional de Creadores de Arte del FONCA. Una exploración de arte y neurociencias. 
 
 En este repositorio se alojan los desarrollos software / hardware utilizados para: extraer señales biometricas EEG, anlizar las señales por medio de un algortimo de detección de emociones. 
 
