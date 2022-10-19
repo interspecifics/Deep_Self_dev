@@ -1,4 +1,4 @@
-# Deep_Self_Dev _ Transient Hypofrontality toolkit 
+# Deep Self _Dev @ Transient Hypofrontality toolkit 
 
 INDICE:
 1. Extracción de datos 
