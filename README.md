@@ -31,6 +31,12 @@ ___________________________________________
 
 ## 2. Analisis de EEG a Emociones
 
+Para poder diferenciar entre estados de ánimo durante las sesión de 10 minutos se caracterizaron las emociones.
+Para ello procesamos las señales para obtener nivel de energía en las bandas alpha y beta.
+Con ello obtener valores de "valence", "arousal", "dominance" de acuerdo a lo que la literatura sugiere.
+Con esos 3 valores normalizados pasarlos a un clasificador de reglas difuso.
+Los resultados son el nivel de activación de las emociones en el tiempo.
+
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/EEG2Emotions/resultados/graficas/alf_audio_EEG_2022-04-20_155442.PNG?raw=true)
 
 ## 3. Servidor de EEG a OSC
