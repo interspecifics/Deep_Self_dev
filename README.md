@@ -10,7 +10,7 @@ Estos datos son despues transmitidos por un servidor que tiene la capacidad de s
 ## 1. Extracción de datos EEG
 Para la tarea de extracción estamos utilizando un versión modificada del CyKit-reverse_engineering dentro de esta carpeta se encuentra una carpeta deep self. Para utilizar el sistema es necesario seguir los siguientes pasos. 
 
-### a. Servidor OSC para transmitir la lectura de electroencefalograma (EEG) de la diadema EMOTIV
+######## a. Servidor OSC para transmitir la lectura de electroencefalograma (EEG) de la diadema EMOTIV
 
 insight_osc.py
 
@@ -19,7 +19,7 @@ Está pensado para ser ejecutado desde linea de comandos y recibe los parámetro
 
 --ip - valor de texto con la ip del cliente 'osc' --port - valor con el puerto del cliente'osc --omit - indica si debe omitir la creación del servidor 'csv' o el servidor 'osc'.
 
-### b. Cliente OSC para escribir la lectura de EEG en un archivo CSV
+######### b. Cliente OSC para escribir la lectura de EEG en un archivo CSV
 
 insight_osc.py
 
@@ -27,6 +27,7 @@ Este script crea un cliente que recibe las señales de lectura de EEG de la diad
 
 Está pensado para ser ejecutado desde linea de comandos y opcionalmente recibe el parámetro --user que agrega la cadena de texto especificada al nombre del archivo csv resultante.
 
+___________________________________________
 
 ## 2. Analisis de EEG a Emociones
 
