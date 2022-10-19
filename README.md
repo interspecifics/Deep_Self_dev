@@ -2,10 +2,11 @@
 
 INDICE:
 1. Extracción de datos 
-2. Analisis de EEG a Emociones
-3. Servidor de EEG a OSC
-4. Visualizaciones
-5. Patches de composición 
+2. Procesamiento de datos
+3. EEG a Emociones
+4. Data Server
+5. Visualizaciones
+6. Patches de composición 
 
 
 Deep Self_Dev es un toolkit desarrollado para el proyecto Trasient Hypofrontality apoyado por el Sistema Nacional de Creadores de Arte del FONCA. 
@@ -43,10 +44,18 @@ Está pensado para ser ejecutado desde linea de comandos y opcionalmente recibe 
 
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/CyKit-reverse_engineering/deep-self/eegcapture.jpg?raw=true)
 
+## 2. Procesamientos de datos
+
+
+![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/raw_icad.png?raw=true)
+
+![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/frec_clusters.png?raw=true)
+
+
 
 ___________________________________________
 
-## 2. Analisis de EEG a Emociones
+## 3. EEG a Emociones
 
 Para poder diferenciar entre estados de ánimo durante las sesión de 10 minutos se caracterizaron las emociones.
 Para ello procesamos las señales para obtener nivel de energía en las bandas alpha y beta.
@@ -56,7 +65,7 @@ Los resultados son el nivel de activación de las emociones en el tiempo.
 
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/EEG2Emotions/resultados/graficas/alf_audio_EEG_2022-04-20_155442.PNG?raw=true)
 
-## 3. Data Server
+## 4. Data Server
 
 Proporciona un flujo de datos sin procesar y transformados, y permite reproducir los datos en segmentos de 128 muestras (2 segundos) que se pueden organizar de forma personalizada en secuencias y bucles. Hay tres tipos de datos en la secuencia:
 
@@ -81,6 +90,6 @@ Confianza de predicción: Cuanta confianza hay en las predicciones.
 
 
 
-## 4. Visualizaciones
+## 5. Visualizaciones
 
-## 5. Patches de composición 
+## 6. Patches de composición 
