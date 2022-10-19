@@ -7,3 +7,14 @@ de detección de emociones.
 
 Estos datos son despues transmitidos por un servidor que tiene la capacidad de sencuenciar set de datos pregrabados en un formato para creación audivisual estandar Open Sound Control. 
 
+#Extracción de datos EEG
+CyKit-reverse_engineering
+
+
+#1. Analisis de EEG a Emociones
+
+#2. Servidor de EEG a OSC
+
+#3. Visualizaciones
+
+#4. Patches de composición 
