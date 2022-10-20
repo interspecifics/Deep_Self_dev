@@ -7,5 +7,5 @@
 
 [`reporte_EEG_data.ipynb`](https://github.com/interspecifics/Deep_Self_dev/blob/main/notebooks/reporte_EEG_data.ipynb) **-** Este notebook genera reportes (en pdf) con visualizaciones de la data de EEG y del proceso de EEG2EMOTIONS para un conjunto de archivos. Cada reporte coniene tres páginas con:  
 1. metadata de la lectura: ID, fecha, duración en segundos
-2. visualizaciones: data raw de los electrodos (RAW_EEG), componentes independientes (ICA), bandas de frecuencia ($\delta, \theta, \alpha, \beta_l, \beta_h, \gamma$), cluster de cada entrada en la lectura.
+2. visualizaciones: data raw de los electrodos (RAW_EEG), componentes independientes (ICA), bandas de frecuencia ($\delta$, $\theta$, $\alpha$, $\beta_l$, $\beta_h$, $\gamma$), cluster de cada entrada en la lectura.
 3. visualización de la 'constelación afectiva' cálculada a partir del la data generada por el proceso de `EEG2EMOTIONS`. Una 'constelación afectiva' es un grafo —en el cubo de las tres dimensiones para los valores de valence, arousal y dominance— en donde los *vertices* son los centroides de cada emoción capturada por el proceso de `EEG2EMOTIONS` y el grosor de las *aristas* representa la proporción de saltos entre dos estados emocionales a lo largo del tiempo. 
