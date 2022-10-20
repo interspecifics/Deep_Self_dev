@@ -25,7 +25,7 @@ Estos datos son despues transmitidos por un servidor que tiene la capacidad de s
 
 ## 1. Extracción de datos EEG
 
---- Archivos de la carpeta /CyKit-reverse_engineering ---
+>> carpeta /CyKit-reverse_engineering 
 
 Para el levantamieno de datos EEG decidimos trabajar con la diadema EMOTIV Insight con capacidad de 5 electrodos. 
 
@@ -66,12 +66,12 @@ ___________________________________________
 
 ## 2. Procesamiento de datos
 
---- Archivos de la carpeta /notebooks ---
+>> carpeta /notebooks 
 
 
 ## 3. EEG a Emociones
 
---- Archivos de la /EEG2Emotions ---
+>> carpeta /EEG2Emotions 
 
 
 Para poder diferenciar entre estados de ánimo durante las sesión de 10 minutos se caracterizaron las emociones.
@@ -84,7 +84,7 @@ Los resultados son el nivel de activación de las emociones en el tiempo.
 
 ## 4. Data Server
 
---- Archivos de la /deepself_server_V1.0 ---
+>> carpeta /deepself_server_V1.0 
 
 
 Proporciona un flujo de datos sin procesar y transformados, y permite reproducir los datos en segmentos de 128 muestras (2 segundos) que se pueden organizar de forma personalizada en secuencias y bucles. Hay tres tipos de datos en la secuencia:
@@ -112,4 +112,7 @@ Confianza de predicción: Cuanta confianza hay en las predicciones.
 
 ## 5. Visualizaciones
 
+>> carpeta /visual
+
 ## 6. Patches de composición 
+
