@@ -92,6 +92,8 @@ Los resultados son el nivel de activación de las emociones en el tiempo.
 
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/EEG2Emotions/resultados/graficas/alf_audio_EEG_2022-04-20_155442.PNG?raw=true)
 
+![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/EEG2Emotions/resultados/graficas/visita_nom_metzli_EEG_2022-05-12_150718.PNG?raw=true)
+
 ___________________________________________
 
 
