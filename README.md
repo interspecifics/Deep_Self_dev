@@ -36,26 +36,28 @@ Para utilizar el sistema es necesario seguir los siguientes pasos.
 
 ###### a. Servidor OSC para transmitir la lectura de electroencefalograma (EEG) raw de la diadema EMOTIV
 
-insight_osc.py
-
-Este scrpit crea dos servidores OSC para transmitir las señales de lectura de EEG creadas por la diadema EMOTIV Insight. La idea es que se crea 1) un servidor que comunica a un cliente para el monitoreo de la data en tiempo real (que hicimos en TouchDesigner) y 2) un servidor que comunica a un cliente que escribe la lectura línea por línea a un archivo de CSV (este cliente se crea con el script csv_out.py).
+`insight_osc.py`  
+  
+Este scrpit crea dos servidores OSC para transmitir las señales de lectura de EEG creadas por la diadema EMOTIV Insight. La idea es que se crea 1) un servidor que comunica a un cliente para el monitoreo de la data en tiempo real (que hicimos en TouchDesigner) y 2) un servidor que comunica a un cliente que escribe la lectura línea por línea a un archivo de CSV (este cliente se crea con el script `csv_out.py`).  
 Está pensado para ser ejecutado desde linea de comandos y recibe los parámetros:
 
---ip - valor de texto con la ip del cliente 'osc' --port - valor con el puerto del cliente'osc --omit - indica si debe omitir la creación del servidor 'csv' o el servidor 'osc'.
+**--ip** - valor de texto con la ip del cliente 'osc'
+**--port** - valor con el puerto del cliente'osc
+**--omit** - indica si debe omitir la creación del servidor 'csv' o el servidor 'osc'.
 
 ###### b. Cliente OSC para escribir la lectura de EEG en un archivo CSV
 
-insight_osc.py
+`insight_osc.py`  
+  
+Este script crea un cliente que recibe las señales de lectura de EEG de la diadema y las escribe línea por línea (para minimizar memoria RAM) en un archivo csv. 
 
-Este script crea un cliente que recibe las señales de lectura de EEG de la diadema y las escribe línea por línea (para minimizar memoria RAM) en un archivo csv.
-
-Está pensado para ser ejecutado desde linea de comandos y opcionalmente recibe el parámetro --user que agrega la cadena de texto especificada al nombre del archivo csv resultante.
+Está pensado para ser ejecutado desde linea de comandos y opcionalmente recibe el parámetro **--user** que agrega la cadena de texto especificada al nombre del archivo csv resultante.
 
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/CyKit-reverse_engineering/deep-self/eegcapture.jpg?raw=true)
+_____________________________________________________________
 
 ## 2. Procesamientos de datos
 
-# notebooks para data analysis
 [`deep_self_feature_ext.ipynb`](https://github.com/interspecifics/Deep_Self_dev/blob/main/notebooks/deep_self_feature_ext.ipynb) **-** Esta notebook está dedicada a la construcción de variables a partir de la data de EEG. Toma un archivo 'csv' con la lectura de EEG de un experimento y le agrega columnas con las variables correspondientes a:  
 1. componentes independientes [ICA](https://en.wikipedia.org/wiki/Independent_component_analysis) de la lectura de los 5 electrodos
 2. bandas de frecuencia (sobre la componente $IC_1$):  $\delta$, $\theta$, $\alpha$, $\beta_l$, $\beta_h$, $\gamma$
@@ -80,10 +82,12 @@ ___________________________________________
 >> carpeta /notebooks 
 
 
+___________________________________________
+
+
 ## 3. EEG a Emociones
 
 >> carpeta /EEG2Emotions 
-
 
 Para poder diferenciar entre estados de ánimo durante las sesión de 10 minutos se caracterizaron las emociones.
 Para ello procesamos las señales para obtener nivel de energía en las bandas alpha y beta.
@@ -92,6 +96,9 @@ Con esos 3 valores normalizados pasarlos a un clasificador de reglas difuso.
 Los resultados son el nivel de activación de las emociones en el tiempo.
 
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/EEG2Emotions/resultados/graficas/alf_audio_EEG_2022-04-20_155442.PNG?raw=true)
+
+___________________________________________
+
 
 ## 4. Data Server
 
@@ -119,11 +126,15 @@ Confianza de predicción: Cuanta confianza hay en las predicciones.
 
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/deepself_server_v1.0/Selection_078.jpg?raw=true)
 
+___________________________________________
 
 
 ## 5. Visualizaciones
 
 >> carpeta /visual
+
+___________________________________________
+
 
 ## 6. Patches de composición 
 
