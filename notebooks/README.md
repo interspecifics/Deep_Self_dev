@@ -1,3 +1,4 @@
+# notebooks para data analysis
 [`deep_self_feature_ext.ipynb`](https://github.com/interspecifics/Deep_Self_dev/blob/main/notebooks/deep_self_feature_ext.ipynb) **-** Esta notebook está dedicada a la construcción de variables a partir de la data de EEG. Toma un archivo 'csv' con la lectura de EEG de un experimento y le agrega columnas con las variables correspondientes a:  
 1. componentes independientes [ICA](https://en.wikipedia.org/wiki/Independent_component_analysis) de la lectura de los 5 electrodos
 2. bandas de frecuencia (sobre la componente $IC_1$):  $\delta, \theta, \alpha, \beta_l, \beta_h, \gamma$
