@@ -24,6 +24,9 @@ En este repositorio se alojan los desarrollos software / hardware utilizados par
 Estos datos son despues transmitidos por un servidor que tiene la capacidad de sencuenciar set de datos pregrabados en un formato para creación audivisual estandar Open Sound Control. 
 
 ## 1. Extracción de datos EEG
+
+--- Archivos de la carpeta /CyKit-reverse_engineering ---
+
 Para el levantamieno de datos EEG decidimos trabajar con la diadema EMOTIV Insight con capacidad de 5 electrodos. 
 
 ![This is an image](https://www.mindtecstore.com/media/image/product/2163/md/emotiv-insight-5-kanal-eeg-headset~4.jpg)
@@ -61,7 +64,15 @@ Está pensado para ser ejecutado desde linea de comandos y opcionalmente recibe 
 
 ___________________________________________
 
+## 2. Procesamiento de datos
+
+--- Archivos de la carpeta /notebooks ---
+
+
 ## 3. EEG a Emociones
+
+--- Archivos de la /EEG2Emotions ---
+
 
 Para poder diferenciar entre estados de ánimo durante las sesión de 10 minutos se caracterizaron las emociones.
 Para ello procesamos las señales para obtener nivel de energía en las bandas alpha y beta.
@@ -72,6 +83,9 @@ Los resultados son el nivel de activación de las emociones en el tiempo.
 ![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/EEG2Emotions/resultados/graficas/alf_audio_EEG_2022-04-20_155442.PNG?raw=true)
 
 ## 4. Data Server
+
+--- Archivos de la /deepself_server_V1.0 ---
+
 
 Proporciona un flujo de datos sin procesar y transformados, y permite reproducir los datos en segmentos de 128 muestras (2 segundos) que se pueden organizar de forma personalizada en secuencias y bucles. Hay tres tipos de datos en la secuencia:
 
