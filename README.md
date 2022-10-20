@@ -23,6 +23,8 @@ En este repositorio se alojan los desarrollos software / hardware utilizados par
 
 Estos datos son despues transmitidos por un servidor que tiene la capacidad de sencuenciar set de datos pregrabados en un formato para creación audivisual estandar Open Sound Control. 
 
+_______________________________________________________________
+
 ## 1. Extracción de datos EEG
 
 >> carpeta /CyKit-reverse_engineering 
