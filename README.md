@@ -130,6 +130,9 @@ ___________________________________________
 
 >> carpeta /visual
 
+![This is an image](https://github.com/interspecifics/Deep_Self_dev/blob/main/Visual/v5_actual/images/driftTD2.jpg?raw=true![image]
+
+
 ___________________________________________
 
 
