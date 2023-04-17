@@ -11,7 +11,7 @@ Está pensado para ser ejecutado desde linea de comandos y recibe los parámetro
 
 ## 2. Cliente OSC para escribir la lectura de EEG en un archivo CSV
 
-`insight_osc.py`  
+`csv_out.py`  
   
 Este script crea un cliente que recibe las señales de lectura de EEG de la diadema y las escribe línea por línea (para minimizar memoria RAM) en un archivo csv. 
 
