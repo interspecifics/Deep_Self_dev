@@ -5,9 +5,9 @@ Esta carpeta contiene código utilizado para modelar el mapeo de señal de EEG a
 ![image](https://github.com/interspecifics/Deep_Self_dev/assets/12953522/13f77d7f-6ac6-44ff-a878-eac70984df04)
 
 ## Instalación
-\```bash
+```bash
 pip install -r requirements.txt
-\```
+```
 
 ## Uso
 Para correr la simulación ejecuta el script `goldberg_perlin.py`
